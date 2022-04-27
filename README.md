@@ -11,7 +11,7 @@ This tutorial will illustrate three ways to locally host an HTTP server in order
 ### Visual Studio Code's Live Server Extension
 Visual Studio Code is a popular code editor that offers many benefits and extensions. One of their most popular extension is [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer). If you are already coding with Visual Studio Code, then this extension is a must-have.
 
-**Step 1.** Download [Visual Studio Code](https://code.visualstudio.com/) and launch the program.
+**Step 1.** Download [Visual Studio Code](https://code.visualstudio.com/download) and launch the program.
   - Try and get familiar with Visual Studio Code as most people uses this code editor!
     
 **Step 2.** Open the Extensions tab on the left-hand menu bar. The icon should look like this:
@@ -34,7 +34,7 @@ Visual Studio Code is a popular code editor that offers many benefits and extens
 ### Python's `http.server` Module
 Python is a popular programming language that offers many built-in modules, such as `http.server`. This module allows your HTML file to be run in a local HTTP server. You will have to use the Command Prompt (Windows) or Terminal (macOS/Linux) to setup your local HTTP server via Python's `http.server`.
 
-**Step 1.** Download the latest version of [Python](https://www.python.org/).
+**Step 1.** Download the latest version of [Python](https://www.python.org/downloads/).
   - As of April 2022, Python3 is the latest Python.
   - For Windows user, make sure to check the "Add Python 3.xxx to PATH" checkbox on the first installer page.
   - To verify that Python is downloaded, run `python3 -V` in the Command Prompt (Windows) or Terminal (macOS/Linux).
@@ -44,6 +44,19 @@ Python is a popular programming language that offers many built-in modules, such
 
 **Step 2.** Change directory into your project's directory that contains your HTML file and other dependent files by using the `cd` command.
 
-**Step 3.** Enter the command `python3 -m http.server` to run your local HTTP server.
+**Step 3.** In your command line system, enter the command `python3 -m http.server` to run your local HTTP server.
 
 **Step 4.** The local HTTP server will run on port 8000 by default. In your preferred web browser, type in [http://localhost:8000](http://localhost:8000) (or just [localhost:8000](http://localhost:8000)) to access your server!
+
+### Node.js `http-server`
+Node.js is an open-source, cross-platform JavaScript runtime environment that executes JavaScript code outside a web browser. Node.js has access to http-server that allows you to run your HTML file in a local HTTP server. You will have to use the Command Prompt (Windows) or Terminal (macOS/Linux) to setup your local HTTP server via Node.js `http-server`.
+
+**Step 1.** Download [Node.js](https://nodejs.org/en/download/).
+
+**Step 2.** In your command line system, enter the command `npx http-server [path]`.
+  - `[path]` should be replaced with your project's directory that contains your HTML file and other dependent files.
+
+**Step 3.** The local HTTP server will run on port 8080 by default. In your preferred web browser, type in [http://localhost:8080](http://localhost:8080) (or just [localhost:8080](http://localhost:8080)) to access your server!
+
+## Conclusion
+Some HTML file cannot be opened directly as a file for many reasons, and you have to use a local HTTP server to run and test your code. There are many ways to run a local HTTP server, and these are the three easiest ways to do so using either Visual Studio Code, Python, or Node.js!
